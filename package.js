@@ -1,6 +1,6 @@
 Package.describe({
   summary: 'Soft remove behavior for Meteor Astronomy',
-  version: '0.2.1',
+  version: '0.3.0',
   name: 'jagi:astronomy-softremove-behavior',
   git: 'https://github.com/jagi/meteor-astronomy-softremove-behavior.git'
 });
@@ -8,7 +8,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
 
-  api.use('jagi:astronomy-behaviors@0.5.2');
+  api.use('jagi:astronomy-behaviors@0.6.0');
   api.use('jagi:astronomy-query-builder@0.1.0');
   api.use('underscore');
 

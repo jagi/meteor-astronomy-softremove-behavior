@@ -9,7 +9,6 @@ Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
 
   api.use('jagi:astronomy-behaviors@0.6.0');
-  api.use('jagi:astronomy-query-builder@0.1.0');
   api.use('underscore');
 
   // Behavior.

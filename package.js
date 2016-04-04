@@ -1,18 +1,19 @@
 Package.describe({
   summary: 'Soft remove behavior for Meteor Astronomy',
-  version: '1.0.1',
+  version: '2.0.0-rc.1',
   name: 'jagi:astronomy-softremove-behavior',
   git: 'https://github.com/jagi/meteor-astronomy-softremove-behavior.git'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2');
+  api.versionsFrom('1.3');
 
-  api.use('jagi:astronomy@1.2.0');
-  api.use('underscore');
+  api.use([
+    'ecmascript',
+    'es5-shim',
+    'jagi:astronomy@2.0.0-rc.8',
+    'stevezhu:lodash@4.6.1'
+  ], ['client', 'server']);
 
-  // Behavior.
-  api.addFiles('lib/behavior/events.js', ['client', 'server']);
-  api.addFiles('lib/behavior/methods.js', ['client', 'server']);
-  api.addFiles('lib/behavior/behavior.js', ['client', 'server']);
+  api.mainModule('lib/main.js', ['client', 'server']);
 });

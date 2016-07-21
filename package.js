@@ -1,12 +1,12 @@
 Package.describe({
   name: 'jagi:astronomy-softremove-behavior',
-  version: '2.0.3',
+  version: '2.0.4',
   summary: 'Soft remove behavior for Meteor Astronomy',
   git: 'https://github.com/jagi/meteor-astronomy-softremove-behavior.git'
 });
 
 Npm.depends({
-  lodash: '4.11.1'
+  lodash: '4.13.1'
 });
 
 Package.onUse(function(api) {
